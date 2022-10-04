@@ -1,0 +1,142 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 设计顶部导航栏样式，学习一下样式表内容 */
+
+.top-nav{
+	/* width: 960px; */
+	width: 80rem;
+	margin: 0 auto;
+	list-style: none;
+	background-image: linear-gradient(#111, #83998f);
+	border-radius: 6px;
+	box-shadow: 0 1px 10px #777;
+	
+	align-items: center;
+}
+
+.top-nav:before,.top-nav:after{
+	content: "";
+	display: table;
+}
+
+.top-nav:after{
+	clear: both;
+}
+
+/* 直接子元素 */
+.top-nav>li{
+	float: left;
+	border-right: 1px solid saddlebrown;
+	position: relative;
+	line-height: 40px;
+	
+	width: 10rem;
+	height: 100%;
+}
+
+.top-nav li{
+	position: relative;
+}
+
+.top-nav>li a{
+	font: "微软雅黑" 12px;
+	text-decoration: none;
+	color: goldenrod;
+	padding: 12px 30px;
+	
+	/* 设置居中 */
+	text-align: left;
+	width: 100%;
+}
+
+.top-nav>li a:hover{
+	color:#fafafa;
+}
+
+.top-nav li ul{
+	position: absolute;
+	border-radius: 6px;
+	z-index: 1;
+	top: 40px;
+	left: 0px;
+	list-style: none;
+	background-image: linear-gradient(#444, #111);
+	box-shadow: 0 -1 0 rgba(255,255,255,0.3);
+	visibility: hidden;
+	/*这里只能用hidden 不能display*/
+	
+	opacity: 0;
+	margin: 20px 0 0 0;
+	transition: all .2s ease-in-out;
+}
+
+.top-nav ul ul{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.top-nav ul li:hover>ul{
+	margin-left: 0px;
+}
+.top-nav li:hover>ul{
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+}
+
+.top-nav ul a{
+	padding: 15px;
+	width: 70px;
+	display: block;
+}
+.top-nav ul a:hover{
+	background-image: linear-gradient(#04acec, #0186ba);
+}
+
+.top-nav ul li:first-child>a{
+	border-radius: 6px 6px 0 0;
+}/*第一个跟最后一个a标签设置圆角*/
+.top-nav ul li:last-child>a{
+	border-radius: 0 0 6px 6px;
+}
+.top-nav ul li{
+	box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+/*两个阴影叠加产生间隔*/
+
+.top-nav ul li:first-child>a:before{
+	content: "";
+	/*这句不可少，少了没效果*/
+	
+	display: block;
+	width: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #444;
+	position: absolute;
+	top: -6px;
+	left: 40px;
+}
+.top-nav ul li:first-child>a:hover:before{
+	border-bottom: 6px solid #04acec;
+}
+.top-nav ul ul{
+	top: 0px;
+	left: 100px;
+}
+.top-nav ul ul li:first-child>a:before{ 
+	border-top: 6px solid transparent;
+	border-right: 6px solid #444;
+	border-bottom: 6px solid transparent;
+	position: absolute;
+	top: 20px;
+	left: -12px;
+}
+.top-nav ul ul li:first-child>a:hover:before{
+	border-bottom: 6px solid transparent;
+	border-right: 6px solid #04acec;
+}
+		
