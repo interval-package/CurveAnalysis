@@ -1,0 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@import url("../../component/topnav/split_nav/split_nav.css");
+
+body{
+	background-image: url("../../img/background/shower.webp");
+}

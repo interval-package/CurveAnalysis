@@ -8,23 +8,20 @@
 		<title>curve analysis</title>
 
         <!-- 导入样式表 -->
-
-        <!-- 设置基础的样式 -->
-		<link rel="stylesheet" href="css/index.css">
-		<!-- 设置导航栏样式 -->
-		<link rel="stylesheet" href="css/navigater_index_fmt.css">
-		<!-- 设置空白框的样式 -->
-        <link rel="stylesheet" href="css/transparent_block.css">
-
-        <!-- 设置绘图框 -->
-        <link rel="stylesheet" href="css/line_utils/line_block.css">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="footer.css">
+		<!-- import不起作用，手动导入 -->
+		<link rel="stylesheet" href="../../css/navigater_index_fmt.css">
+		<link rel="stylesheet" href="../../css/transparent_block.css">
+		<link rel="stylesheet" href="../../css/line_utils/line_block.css">
 
         <!-- 导入js -->
-
-		<!-- 基础内容初始化 -->
 		<script src="js/index/index_loading.js"></script>
 		
 	</head>
+	
+	
+	<!-- 设置导航栏内容 -->
     <nav>
         <!-- 使用无序列表+浮动来实现 -->
         <ul class="top-nav">
@@ -71,8 +68,19 @@
             <li><a href="#">关于</a></li>
         </ul>
     </nav>
+	
+	
+	<!-- 设置主题内容 -->
 	<body id='index_id'>
 		<div class="transparent_block">
+			<div class="centering_items">
+				<h1>
+					Curve Analysis
+				</h1>
+			</div>
+<!-- 			<div class="centering_items">
+				<p>高效数据化图片工具</p>
+			</div> -->
         </div>
         <div class="line_block">
             <canvas class="line_figure" id="line_figure_1">
