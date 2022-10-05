@@ -1,0 +1,27 @@
+
+.line_block{
+    width: 100%;
+    align-items: center;
+}
+
+.line_block canvas{
+    border-radius: 10px;
+    border: 10px solid black;
+    
+    /* 设置居中，这里的 */
+    display: block;
+
+    /* top和bottom必须设置，但可以设置为0 */
+    margin: 0 auto;
+}
+
+.line_figure{
+    width: 70%;
+    height: 100rem;
+
+    background-color: aquamarine;
+}
+
+.line_figure:hover{
+    cursor: help;
+}

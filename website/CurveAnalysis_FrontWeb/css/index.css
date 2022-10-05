@@ -1,16 +1,30 @@
 
 /* 先预设成这个样子，后面需要修改我们的样式表 */
-#index_id {
-	background: url("../img/background/hot.jpeg");
-	/* 为了不会缩放变换，所以不难100% */
-	background-size: 100rem;
 
+*{
+	/* 设置全局没有间隔 */
+	margin: 0;
+	padding: 0;
+}
+
+footer{
+	width: 100%;
+}
+
+#index_id {
 	width: 100%;
 	height: 100%;
 	zoom: 1;
+
+	/* 设置背景 */
+	background: url("../img/background/shower.webp");
+	
+	/* 为了不会缩放变换，所以不100%，需要指定大小 */
+	/* background-size: 100%; */
+	background-size: 100rem;
+
 	
 	background-repeat: no-repeat;
-	
 	/* 设置背景图像是否会滑动 */
 	background-attachment: fixed;
 	
@@ -21,7 +35,23 @@
 	/* background: url("../img/background/hot.jpeg") no-repeat center/cover; */
 }
 
-nav {
-/* 	color: red; */
+.others_info{
+	/* align-items 只是元素的排放方式，不是元素位置 */
+	align-items: center;
+	
+	/* 尝试一下 */
+/* 	place-items: end center; */
 }
+
+.others_info>iframe{
+	/* 只要有将元素按照block方式排版+自动识别margin，才会自动居中 */
+	display: block;
+	margin: 0 auto;
+	
+	border-top: 1rem solid bisque;
+	
+	width: 100%;
+	height: 20rem;
+}
+
 

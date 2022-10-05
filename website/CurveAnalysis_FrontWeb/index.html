@@ -2,55 +2,89 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+
 		<title>curve analysis</title>
+
+        <!-- 导入样式表 -->
+
+        <!-- 设置基础的样式 -->
 		<link rel="stylesheet" href="css/index.css">
-		
+		<!-- 设置导航栏样式 -->
 		<link rel="stylesheet" href="css/navigater_index_fmt.css">
-		
-		<!-- 初始化内容 -->
+		<!-- 设置空白框的样式 -->
+        <link rel="stylesheet" href="css/transparent_block.css">
+
+        <!-- 设置绘图框 -->
+        <link rel="stylesheet" href="css/line_utils/line_block.css">
+
+        <!-- 导入js -->
+
+		<!-- 基础内容初始化 -->
 		<script src="js/index/index_loading.js"></script>
 		
 	</head>
-	<nav>
-		<ul class="top-nav">
-			<li><a href="#">主页面</a></li>
-			<li><a href="#">API Documentation</a>
-				<ul>
-					<li><a href="#">python</a>
-						<ul>
-							<li><a href="#">temp</a></li>
-							<li><a href="#">temp</a></li>
-						</ul>
-					</li>
-					<li><a href="#">加载页面</a>
-						<ul>
-							<li><a href="#">temp</a></li>
-							<li><a href="#">temp</a></li>
-							<li><a href="#">temp</a></li>
-						</ul>
-					</li>
-					<li><a href="#">temp</a></li>
-				</ul>
-			</li>
-			<li><a href="#">temp</a></li>
-				<ul>
-					<li><a href="#">temp</a></li>
-						<ul>
-							<li><a href="#">temp</a></li>
-						</ul>
-					</li>
-					<li><a href="#">temp</a></li>
-						<ul>
-							<li><a href="#">temp</a></li>
-							<li><a href="#">temp</a></li>
-							<li><a href="#">temp</a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
+    <nav>
+        <!-- 使用无序列表+浮动来实现 -->
+        <ul class="top-nav">
+            <!-- 主结构为ul，每一个表项为li，li内容需要用a来做第一个 -->
+            <li><a href="#">主页面</a></li>
+            <li><a href="#">API文档</a>
+                <!-- 如果需要下拉，再在下面加一个表，结构相同，最多三级 -->
+                <ul>
+                    <li><a href="#">使用教程</a>
+                        <ul>
+                            <li><a href="#">网页使用</a></li>
+                            <li><a href="#">包安装</a></li>
+                            <li><a href="#">包目录</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">API介绍</a>
+                        <ul>
+                            <li><a href="./API_overview.html">快速上手</a></li>
+                            <li><a href="#">在线阅读</a></li>
+                            <li><a href="#">下载pdf</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">更多</a></li>
+                </ul>
+            </li>
+            <li><a href="#">相关内容</a>
+                <ul>
+                    <li><a href="#">网页介绍</a>
+                        <ul>
+                            <li><a href="#">网页结构</a></li>
+                            <li><a href="#">网页内容</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">算法介绍</a>
+                        <ul>
+                            <li><a href="#">传统机器学习算法</a></li>
+                            <li><a href="#">边缘嵌套模型</a></li>
+                            <li><a href="#">再抽取</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">管理</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </nav>
 	<body id='index_id'>
-		
+		<div class="transparent_block">
+        </div>
+        <div class="line_block">
+            <canvas class="line_figure" id="line_figure_1">
+                
+            </canvas>
+        </div>
+
 	</body>
+
+    <footer>
+        <div class="others_info">
+            <iframe src="http://www.zaterval.top" frameborder="0"></iframe>
+        </div>
+    </footer>
 </html>
