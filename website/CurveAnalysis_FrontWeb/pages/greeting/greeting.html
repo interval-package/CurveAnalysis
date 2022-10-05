@@ -4,16 +4,42 @@
 		<meta charset="utf-8">
 		<title>Curve Analysis</title>
 		<link rel="stylesheet" href="greeting.css">
+
 		<link rel="stylesheet" href="../../component/topnav/split_nav/split_nav.css">
-		
-		<script src="greeting.js"></script>
+		<link rel="stylesheet" href="../../component/sidenav/sidenav.css">
+		<link rel="stylesheet" href="../../component/overlay_content/overlay_content.css">
+
+		<script src="../../component/sidenav/sidenav.js"></script>
+		<script>
+			// 处理重名问题
+			window.open_sideNav = window.openNav;
+			window.close_sideNav = window.closeNav;
+		</script>
+
+		<script src="../../component/overlay_content/overlay_content.js"></script>
 	</head>
 	<nav class="topnav">
 		<a href="#" class="active">首页</a>
-		<a href="#">帮助</a>
+		<a href="javascript:void(0)" class="closebtn" onclick="openNav()">帮助</a>
+		<a href="#" href="javascript:void(0)" onclick="open_sideNav()">辅助功能</a>
 		<a href="#" class='split'>关于</a>
 	</nav>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Contact</a>
+		</div>
+	  </div>
 	<body>
-
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="close_sideNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
 	</body>
 </html>

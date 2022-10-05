@@ -3,8 +3,13 @@ body {
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
+  /* 设置是上下，还是左右 */
+  /* height: 100%;
+  width: 0; */
+
+  height: 0;
+  width: 100%;
+
   position: fixed;
   z-index: 1;
   top: 0;

@@ -156,11 +156,12 @@
 }
 
 /* 后面就是自己找的一些内容 */
+/* 父子选择器了解一下 */
 
-.top-nav:last-child{
+.top-nav>li:last-child{
 	border-right: none;
 }
 
-.top-nav>li>ul:last-child{
+.top-nav>li>ul>li:last-child{
 	border-bottom: none;
 }
