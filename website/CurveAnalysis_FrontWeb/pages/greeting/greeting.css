@@ -6,3 +6,7 @@
 body{
 	background-image: url("../../img/background/shower.webp");
 }
+
+a.split:last-child{
+	/* border-right: 0.1px solid wheat; */
+}
