@@ -5,14 +5,15 @@
 		<title>Curve Analysis</title>
 
 		<link rel="stylesheet" href="../../component/ScrollBkImg/ScrolBkImg.css">
-
 		<link rel="stylesheet" href="../../component/topnav/split_nav/split_nav.css">
-		<link rel="stylesheet" href="../../component/sidenav/sidenav.css">
-		<link rel="stylesheet" href="../../component/overlay_content/overlay_content.css">
 		<link rel="stylesheet" href="../../component/dropdown_nav/dropdown_nav.css">
 
-		<link rel="stylesheet" href="greeting.css">
 
+        <link rel="stylesheet" href="../../component/drag_uploader/drag_uploader.css">
+        <script src="../../component/drag_uploader/drag_uploader.js"></script>
+
+
+		<link rel="stylesheet" href="../../component/sidenav/sidenav.css">
 		<script src="../../component/sidenav/sidenav.js"></script>
 		<script>
 			// 导入side nav
@@ -21,30 +22,15 @@
 			window.close_sideNav = window.closeNav;
 		</script>
 
+
+		<link rel="stylesheet" href="../../component/overlay_content/overlay_content.css">
 		<script src="../../component/overlay_content/overlay_content.js"></script>
+		<link rel="stylesheet" href="./upload_page.css">
 
 	</head>
 	<nav class="topnav">
 		<a href="#" class="active">首页</a>
 		<a href="javascript:void(0)" onclick="open_sideNav()">帮助栏</a>
-		
-		<div class="dropdown">
-			<button class="dropbtn">API参考</button>
-			<div class="dropdown-content">
-			  <a href="#">python包</a>
-			  <a href="#">服务端接口</a>
-			  <a href="#">js整合</a>
-			</div>
-		</div> 
-
-		<div class="dropdown">
-			<button class="dropbtn">快速使用</button>
-			<div class="dropdown-content">
-			  <a href="#">网页介绍</a>
-			  <a href="#">本地服务配置</a>
-			</div>
-		</div> 
-
 		<a href="javascript:void(0)" onclick="openNav()" class='split'>关于</a>
 	</nav>
 
@@ -70,7 +56,14 @@
 		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
 		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
 		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
-		<div class="bg-text">Curve Analysis</div>
-		<button class="bg-item">sad</button>
+        <div class="bg-item">
+            <div class="drag-area">
+                <div class="icon"></i></div>
+                <header>Drag & Drop to Upload File</header>
+                <span>OR</span>
+                <button>Browse File</button>
+                <input type="file" hidden>
+            </div>
+        </div>
 	</body>
 </html>

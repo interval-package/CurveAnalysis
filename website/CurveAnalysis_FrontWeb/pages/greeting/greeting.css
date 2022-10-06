@@ -4,9 +4,20 @@
 }
 
 body{
-	background-image: url("../../img/background/shower.webp");
+	/* background-image: url("../../img/background/shower.webp"); */
 }
 
-a.split:last-child{
-	/* border-right: 0.1px solid wheat; */
+#mySidenav{
+	/* 上升一位，拉高 */
+	z-index: 3;
+}
+
+.bg-text{
+	width: auto;
+}
+
+.bg-item{
+    position: fixed;
+    top: 70%;
+    left: 50%;
 }
