@@ -1,0 +1,9 @@
+@import url(../../component/topnav/split_nav/split_nav.css);
+@import url(../../component/dropdown_nav/dropdown_nav.css);
+@import url(../../component/overlay_content/overlay_content.css);
+
+
+body{
+    background-image: url("../../img/background/shower.webp");
+    background-size: cover;
+}
