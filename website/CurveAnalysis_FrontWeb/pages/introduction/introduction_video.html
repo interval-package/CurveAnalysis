@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="../../component/overlay_content/overlay_content.css">
 		<link rel="stylesheet" href="../../component/dropdown_nav/dropdown_nav.css">
 
-		<link rel="stylesheet" href="greeting.css">
+		<link rel="stylesheet" href="./introduction.css">
 
 		<script src="../../component/sidenav/sidenav.js"></script>
 		<script>
@@ -25,13 +25,13 @@
 
 	</head>
 	<nav class="topnav">
-		<a href="greeting.html" class="active">首页</a>
+		<a href="#" class="active">首页</a>
 		<a href="javascript:void(0)" onclick="open_sideNav()">帮助栏</a>
 		
 		<div class="dropdown">
 			<button class="dropbtn">API参考</button>
 			<div class="dropdown-content">
-			  <a href="../API/API_overview.html">documentation</a>
+			  <a href="#">python包</a>
 			  <a href="#">服务端接口</a>
 			  <a href="#">js整合</a>
 			</div>
@@ -40,9 +40,8 @@
 		<div class="dropdown">
 			<button class="dropbtn">快速使用</button>
 			<div class="dropdown-content">
-				<a href="../introduction/introduction_video.html">视频</a>
-				<a href="#">网页介绍</a>
-				<a href="#">本地服务配置</a>
+			  <a href="#">网页介绍</a>
+			  <a href="#">本地服务配置</a>
 			</div>
 		</div> 
 
@@ -67,15 +66,12 @@
 	</nav>
 	
 	<body id="main">
-		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
-		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
-		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
-		<div class="bg-image" style="background-image: url('../../img/background/shower.webp')"></div>
-		<div class="bg-text">Curve Analysis</div>
-		<a href="../upload_page/upload_page.html">
-			<button class="bg-item" id="login_button">
-				开始体验！！！
-			</button>
-		</a>
+        <div class="bg-item">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+              Your browser does not support the video tag.
+            </video>
+        </div>
 	</body>
 </html>
