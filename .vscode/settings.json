@@ -1,4 +1,10 @@
 {
     "workbench.colorTheme": "Monokai",
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.pyc": true
+    },
+    "files.watcherExclude": {
+        "__pycache__/**": true
+    }
 }
