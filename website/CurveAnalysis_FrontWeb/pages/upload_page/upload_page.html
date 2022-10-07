@@ -10,7 +10,6 @@
 
 
         <link rel="stylesheet" href="../../component/drag_uploader/drag_uploader.css">
-        <script src="../../component/drag_uploader/drag_uploader.js"></script>
 
 
 		<link rel="stylesheet" href="../../component/sidenav/sidenav.css">
@@ -51,12 +50,13 @@
 		</div>
 	</nav>
 	
+	<nav class="topnav">
+		<a href="#" class="active">首页</a>
+		<a href="javascript:void(0)" onclick="open_sideNav()">帮助栏</a>
+		<a href="javascript:void(0)" onclick="openNav()" class='split'>关于</a>
+	</nav>
+
 	<body id="main">
-		<nav class="topnav">
-			<a href="#" class="active">首页</a>
-			<a href="javascript:void(0)" onclick="open_sideNav()">帮助栏</a>
-			<a href="javascript:void(0)" onclick="openNav()" class='split'>关于</a>
-		</nav>
 
         <div class="bg-item">
             <div class="drag-area">
@@ -66,6 +66,8 @@
                 <button>Browse File</button>
                 <input type="file" hidden>
             </div>
+			<!-- 只能在组件内部载入 -->
+			<script src="../../component/drag_uploader/drag_uploader.js"></script>
         </div>
 	</body>
 </html>
