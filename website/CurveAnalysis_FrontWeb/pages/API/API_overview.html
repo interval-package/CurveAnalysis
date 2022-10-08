@@ -21,6 +21,8 @@
 			window.close_overNav = window.closeNav;
 		</script>
 
+
+		<script src="./API_overview.js"></script>
 	</head>
 	<!-- 设置头部导航栏 -->
 	<nav class="topnav">
@@ -28,9 +30,9 @@
 		<a href="javascript:void(0)" onclick="open_sideNav()">目录</a>
 		
 		<div class="dropdown">
-			<button class="dropbtn">API参考</button>
+			<button class="dropbtn">快速导向</button>
 			<div class="dropdown-content">
-			  <a href="#">python包</a>
+			  <a href="#">更多关于</a>
 			  <a href="#">服务端接口</a>
 			  <a href="#">js整合</a>
 			</div>
@@ -43,8 +45,6 @@
 	<nav id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="close_sideNav()">&times;</a>
 		<a onclick="open_doc(event, 'Quick_start')" id="defaultOpen">Quick Start</a>
-		<a onclick="open_doc(event, 'Paris')">Clients</a>
-		<a href="#">Contact</a>
     </nav>
 
 	<!-- 设置关于页面 -->
@@ -57,23 +57,12 @@
 			<a href="https://github.com/interval-package/CurveAnalysis">github项目</a>
 		</div>
 	</nav>
+
 	<body id="main">
-		<div class="v_tab">
-			<div id="Quick_start" class="tabcontent">
-				<h3>Quick Start</h3>
-				<p>London is the capital city of England.</p>
-			</div>
-			
-			<div id="Paris" class="tabcontent">
-				<h3>Paris</h3>
-				<p>Paris is the capital of France.</p> 
-			</div>
-			
-			<div id="Tokyo" class="tabcontent">
-				<h3>Tokyo</h3>
-				<p>Tokyo is the capital of Japan.</p>
-			</div>
-			<script src="./API_overview.js"></script>
+
+		<div class="v_tab" id="displayer">
+			<object id="Quick_start" class="tabcontent" data="http://zaterval.top">
+			</object>
 		</div>
 
 	</body>
