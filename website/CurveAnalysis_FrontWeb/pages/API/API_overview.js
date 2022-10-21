@@ -1,14 +1,13 @@
 // 自动调用添加内容
 
-window.onload = function(){
+var xmlhttp = new XMLHttpRequest();
 
+window.onload = function(){
     loading_md_info();
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
 }
-
-
 
 function loading_md_info(){
 
@@ -17,16 +16,10 @@ function loading_md_info(){
 
     var container;
 
-    // container = document.createElement("div");
-    // container.setAttribute("class","tabcontent");
-    // container.setAttribute("id","auto_add");
-    // container.appendChild(document.createTextNode("info"))
-
-    container = document.createElement("object");
-    container.setAttribute("data","./data.html");
+    container = document.createElement("div");
     container.setAttribute("id","auto_add");
     container.setAttribute("class", "tabcontent");
-
+    xmlhttp.open("get", )
 
     body.appendChild(container);
 
@@ -36,7 +29,6 @@ function loading_md_info(){
 
     bar.appendChild(container);
 }
-
 
 
 function open_doc(evt, info) {

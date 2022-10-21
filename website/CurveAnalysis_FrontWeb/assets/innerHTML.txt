@@ -1,0 +1,31 @@
+<h1 id='innerhtml'>innerHTML</h1>
+<h2 id='定义和用法'>定义和用法</h2>
+<p>innerHTML 属性设置或返回表格行的开始和结束标签之间的 HTML。</p>
+<p>也就是我们之后将内容插入也都是使用这个来进行插入的渲染，或者是重载。</p>
+<p><code>innerHTML</code>指的是从对象的起始位置到终止位置的全部内容,包括Html标签。
+<code>innerText</code> 指的是从起始位置到终止位置的内容,但它去除Html标签。</p>
+<h2 id='语法'>语法</h2>
+<p>HTMLElementObject.innerHTML=<em>text</em></p>
+<pre><code class='language-html' lang='html'>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;菜鸟教程(runoob.com)&lt;/title&gt;
+&lt;script&gt;
+function changeLink(){
+    document.getElementById(&#39;myAnchor&#39;).innerHTML=&quot;RUNOOB&quot;;
+    document.getElementById(&#39;myAnchor&#39;).href=&quot;//www.runoob.com&quot;;
+    document.getElementById(&#39;myAnchor&#39;).target=&quot;_blank&quot;;
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ 
+&lt;a id=&quot;myAnchor&quot; href=&quot;//www.microsoft.com&quot;&gt;Microsoft&lt;/a&gt;
+&lt;input type=&quot;button&quot; onclick=&quot;changeLink()&quot; value=&quot;修改链接&quot;&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>但是要注意，在前面执行了的，js脚本，对于下面元素的选择无法实现。因为我们在执行js脚本的时候，下面的内容还没有渲染完成，所以没有用。</p>
+<p>所以我们一般会把脚本放到html的最后。</p>
