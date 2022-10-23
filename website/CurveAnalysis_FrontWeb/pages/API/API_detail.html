@@ -8,15 +8,13 @@
 	</head>
 	<!-- 设置头部导航栏 -->
 	<nav class="topnav">
-		<a href="pages/greeting/greeting.html" class="active">首页</a>
+		<a href="../greeting/greeting.html" class="active">首页</a>
 		<a href="javascript:void(0)" onclick="open_sideNav()">目录</a>
 		
 		<div class="dropdown">
-			<button class="dropbtn">快速导向</button>
+			<button class="dropbtn">更多内容</button>
 			<div class="dropdown-content">
-			  <a href="#">更多关于</a>
-			  <a href="#">服务端接口</a>
-			  <a href="#">js整合</a>
+			  <a href="#">最佳实践</a>
 			</div>
 		</div> 
 
@@ -26,7 +24,9 @@
 	<!-- 设置边栏 -->
 	<nav id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="close_sideNav()">&times;</a>
-		<a onclick="open_doc(event, 'Quick_start')" id="defaultOpen" class="tablinks">Quick Start</a>
+		<div id="side_nav_details">
+			<a id = "Quick_Start">Quick Start</a>
+		</div>
     </nav>
 
 	<!-- 设置关于页面 -->
@@ -41,14 +41,8 @@
 	</nav>
 
 	<body id="main">
-
-		<div class="v_tab" id="displayer">
-			<div id="Quick_start" class="tabcontent">
-				<h1>快速配置内容</h1>
-				<p></p>
-			</div>
+		<div id="overview">
 		</div>
-
 	</body>
 
 	<script src="../../component/sidenav/sidenav.js"></script>
@@ -64,5 +58,5 @@
 		window.open_overNav = window.openNav;
 		window.close_overNav = window.closeNav;
 	</script>
-	<script src="./API_overview.js"></script>
+	<script src="./API_detail.js"></script>
 </html>
