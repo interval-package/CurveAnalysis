@@ -25,6 +25,6 @@ function loading_md_names(){
 }
 
 function proxy_for_loading_md(e){
-    console.log(e.target.innerHTML);
+    // console.log(e.target.innerHTML);
     document.getElementById("overview").innerHTML = `<h1>${e.target.innerHTML}</h1>`;
 }
